@@ -13,6 +13,7 @@
 		98A199771A6B8C2200CE414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A199761A6B8C2200CE414E /* Images.xcassets */; };
 		98A1997A1A6B8C2200CE414E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A199781A6B8C2200CE414E /* LaunchScreen.xib */; };
 		98A199861A6B8C2200CE414E /* SudokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A199851A6B8C2200CE414E /* SudokuTests.swift */; };
+		98A199901A6BA46400CE414E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A1998F1A6BA46400CE414E /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		98A1997F1A6B8C2200CE414E /* SudokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A199841A6B8C2200CE414E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98A199851A6B8C2200CE414E /* SudokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuTests.swift; sourceTree = "<group>"; };
+		98A1998F1A6BA46400CE414E /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				98A1996F1A6B8C2200CE414E /* AppDelegate.swift */,
 				98A199711A6B8C2200CE414E /* ViewController.swift */,
+				98A1998F1A6BA46400CE414E /* DataModel.swift */,
 				98A199731A6B8C2200CE414E /* Main.storyboard */,
 				98A199761A6B8C2200CE414E /* Images.xcassets */,
 				98A199781A6B8C2200CE414E /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				98A199721A6B8C2200CE414E /* ViewController.swift in Sources */,
 				98A199701A6B8C2200CE414E /* AppDelegate.swift in Sources */,
+				98A199901A6BA46400CE414E /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
