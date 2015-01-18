@@ -74,7 +74,7 @@ class DataModel{
     }
     
     //check if all rows are ok
-    func checkRow() -> Bool{
+    func checkRows() -> Bool{
         for row in 0..<9{
             if !checkBase(getRowArray(row)){
                 return false
@@ -84,7 +84,7 @@ class DataModel{
     }
     
     //check if all rows are ok
-    func checkColumn() -> Bool{
+    func checkColumns() -> Bool{
         for colomn in 0..<9{
             if !checkBase(getColomnArray(colomn)){
                 return false
@@ -94,7 +94,7 @@ class DataModel{
     }
     
     //check if all segments are ok
-    func checkSegment() -> Bool{
+    func checkSegments() -> Bool{
         for seg in 0..<9{
             if !checkBase(getSegArray(seg)){
                 return false
