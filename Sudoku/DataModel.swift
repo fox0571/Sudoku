@@ -54,6 +54,16 @@ class DataModel{
     
     
     //to get an array of the segment and return it
+    //the segments are like the following
+    //every segment is 3*3
+    //      -------------------
+    //      |  0  |  1  |  2  |
+    //      -------------------
+    //      |  3  |  4  |  5  |
+    //      -------------------
+    //      |  6  |  7  |  8  |
+    //      -------------------
+    
     func getSegArray(position:Int) -> [Int]{
         var segArray=[Int](count: 9, repeatedValue: 0)
         let standardSegment=[(0,0),(0,1),(0,2),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2),
@@ -66,10 +76,9 @@ class DataModel{
                              (6,3),(6,4),(6,5),(7,3),(7,4),(7,5),(8,3),(8,4),(8,5),
                              (6,6),(6,7),(6,8),(7,6),(7,7),(7,8),(8,6),(8,7),(8,8)]
         for i in 0..<9{
-            for j in 0..<9{
-                var (row,colomn)=standardSegment[position*9+j]
-                segArray[i*9+j]=data[row][colomn]
-            }
+            var (row,colomn)=standardSegment[position*9+i]
+            segArray[i]=data[row][colomn]
+            
         }
         
         return segArray
